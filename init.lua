@@ -198,6 +198,7 @@ require('lazy').setup({
   require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
 
+  -- NOTE: Neotree plugin
   require 'kickstart.plugins.neotree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -206,7 +207,7 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {})
 
 -- [[ Setting options ]]
