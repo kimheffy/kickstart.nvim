@@ -198,7 +198,6 @@ require('lazy').setup({
   require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
 
-  -- [NOTE: Maybe I don't need this cause I have netrw]
   require 'kickstart.plugins.neotree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
