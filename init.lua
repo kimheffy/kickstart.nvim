@@ -195,6 +195,8 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  { 'jose-elias-alvarez/null-ls.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
+
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
@@ -480,6 +482,15 @@ mason_lspconfig.setup_handlers {
     }
   end
 }
+
+-- [[ linters and formatters ]]
+local null_ls = require("null-ls")
+
+null_ls.setup({
+  sources = {
+    null_ls.builtins.formatting.prettierd,
+  }
+})
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
