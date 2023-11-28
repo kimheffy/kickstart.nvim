@@ -447,7 +447,9 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  tsserver = {},
+  tsserver = {
+    filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' }
+  },
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
   lua_ls = {
