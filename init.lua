@@ -272,6 +272,8 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- TODO: [[ Neotree (custom) ]]
 vim.keymap.set('n', '<leader>pv', '<cmd>Neotree toggle<cr>', { desc = 'Toggle Neotree' })
 
+vim.keymap.set('n', '<leader>pa', '<cmd>AerialToggle!<cr>', { desc = 'Toggle Aerial' })
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
